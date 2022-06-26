@@ -1,0 +1,16 @@
+class Human:
+    def __init__(self,name, tiredness = 0):
+        self.name = name
+        self.tiredness = tiredness
+    def run(self,km):
+        if km +  self.tiredness <=20:
+            self.tiredness = self.tiredness + km
+            return self.tiredness
+        else:
+            return "I am too tired"
+    def sleep(self,hour):
+        self.tiredness = self.tiredness - (hour*10)
+        return self.tiredness
+
+Human1=Human("Lucy")
+print(Human1.run(10),Human1.run(10),Human1.run(10),Human1.sleep(1),Human1.run(10), sep = "\n")
