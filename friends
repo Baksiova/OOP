@@ -1,0 +1,15 @@
+class Friends:
+    def __init__(self, name,last_name, age):
+        self.name=name
+        self.last_name=last_name
+        self.age=age
+
+    def introduce(self):
+        if self.name == "Janka":
+            return f"Hi my name is {self.name} {self.last_name}, I am {self.age} years old and my friend is {person2.name} {person1.last_name} "
+        else:
+             return f"Hi my name is {self.name} {self.last_name}, I am {self.age} years old and my friend is {person1.name} {person1.last_name}"
+
+person1 =Friends("Janka","Komarkova",22)
+person2=Friends("Erika","Nova",32)
+print(person2.introduce())
